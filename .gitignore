@@ -1,0 +1,5 @@
+vendor/
+coverage/
+.idea/
+*.log
+.phpunit.result.cache

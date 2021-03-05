@@ -1,0 +1,56 @@
+    {
+      "gender": "female",
+      "name": {
+        "title": "Ms",
+        "first": "Charlotte",
+        "last": "Sullivan"
+      },
+      "location": {
+        "street": {
+          "number": 1405,
+          "name": "Samaritan Dr"
+        },
+        "city": "Wollongong",
+        "state": "Victoria",
+        "country": "Australia",
+        "postcode": 1127,
+        "coordinates": {
+          "latitude": "4.3252",
+          "longitude": "128.2038"
+        },
+        "timezone": {
+          "offset": "-8:00",
+          "description": "Pacific Time (US & Canada)"
+        }
+      },
+      "email": "charlotte.sullivan@example.com",
+      "login": {
+        "uuid": "2ef22bfd-4497-4346-bd9f-fd4a0f701e10",
+        "username": "yellowwolf883",
+        "password": "marisa",
+        "salt": "tLDosy9Y",
+        "md5": "d403652182dd1b0856ff15198401c310",
+        "sha1": "6e297aaebb36c09dd815fdf7eecbc45fceb15a20",
+        "sha256": "40f20a7eb90523f028dc615c7d3ed0128b047319b300ceed7264aaad71d59106"
+      },
+      "dob": {
+        "date": "1959-02-19T09:13:42.767Z",
+        "age": 62
+      },
+      "registered": {
+        "date": "2013-12-30T10:44:03.987Z",
+        "age": 8
+      },
+      "phone": "09-4008-1013",
+      "cell": "0446-304-162",
+      "id": {
+        "name": "TFN",
+        "value": "160892102"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/0.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/0.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/0.jpg"
+      },
+      "nat": "AU"
+    }

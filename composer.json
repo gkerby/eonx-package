@@ -1,0 +1,43 @@
+{
+  "name": "kerby/eonx-test",
+  "description": "EonX test task",
+  "license": "Strict",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Alexei Lukin",
+      "email": "kerbylav@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "ext-json": "*",
+    "nesbot/carbon": "^2.41",
+    "ext-curl": "*",
+    "psr/http-client": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.3",
+    "mockery/mockery": "^1.1",
+    "roave/security-advisories": "dev-master",
+    "sempro/phpunit-pretty-print": "^1.0",
+    "symfony/var-dumper": "^5.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kerby\\EonxTestTask\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kerby\\EonxTestTask\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kerby\\EonxTestTask\\EonxTestTaskServiceProvider"
+      ]
+    }
+  }
+}
