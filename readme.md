@@ -1,6 +1,6 @@
 ## Entities
 - CustomerDTO - provides a way for storing intermediate data got from external data source. Later
-it can be used to fill entity and store in database
+it can be used to fill real entity and store in database
 
 ## Responsibilities
 Names are provided without `Interface` postfix
@@ -17,15 +17,21 @@ Names are provided without `Interface` postfix
 
 ## Dependencies
 - DataProvider depends on a fetcher and a customerDTO factory
-- Customer factory depends on a customer validator
-- Importer depends on ExternalCustomersProvider and CustomerStorage
+- CustomerDTO factory depends on a customer validator
+- Importer depends on DataProvider and CustomerStorage
 
 ## Implementing new source of customers
 If your have to introduce a new source of customers you have to: 
-- implement new ExternalCustomersFetcher since chances are very high that location of API 
-  and format of method result has changed
-- implement new CustomerAdapterFactory since format of API data has probably changed
+- implement a new Fetcher since chances are very high that location of API 
+  and format of method's result has changed
+- implement new CustomerDTOFactory since format of API data has probably changed
 
-Then you have to provide ExternalCustomersProvider with a new fetcher and a factory, 
-and in most cases that's pretty much enough
+Then you have to provide DataProvider with a new fetcher and a factory, 
+and in most cases that's pretty much enough to get customers from new data source
 
+## Implementing new data storage for storing imported customers
+You have to implement CustomerStorage interface to make a new way to store incoming customers during import.
+Later it should be used in Importer implementation
+
+## Generic classes
+Package has a number of generic classes ready to use out-of-the-box
