@@ -1,10 +1,11 @@
-## Entities
-- CustomerDTO - provides a way for storing intermediate data got from external data source. Later
-it can be used to fill real entity and store in database
+# Framework-agnostic business logic for EonX test task
+This package implements framework-agnostic business logic for project https://github.com/gkerby/eonx-lumen
 
 ## Responsibilities
 Names are provided without `Interface` postfix
 
+- CustomerDTO - entity which provides a way for storing intermediate data got from external data source. Later
+  it can be used to fill real entity and store in database
 - DataProvider - responsible for providing us with an array of CustomerDTO entities 
   got from external data source
 - Fetcher - responsible for communicating with external data source
